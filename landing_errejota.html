@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ErreJota Desentupidora</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #111; }
+    header { background: #006400; color: white; padding: 20px; text-align: center; }
+    section { padding: 20px; max-width: 600px; margin: auto; }
+    h1 { color: #006400; }
+    a.btn-whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .fixed-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 15px 20px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-799159268"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-799159268');
+
+    function trackWhatsAppClick() {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'engajamento',
+        'event_label': 'Botão WhatsApp',
+        'value': 1
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ErreJota Desentupidora</h1>
+    <p>Atendimento rápido 24h no Rio de Janeiro</p>
+    <a href="https://wa.me/5521994194220" class="btn-whatsapp" id="btn-whatsapp-topo" onclick="trackWhatsAppClick()">CHAMAR NO WHATSAPP</a>
+  </header>
+
+  <section>
+    <h2>Entupiu? A gente resolve AGORA!</h2>
+    <p>✅ Pia • ✅ Ralo • ✅ Vaso • ✅ Esgoto • ✅ Caixa de gordura</p>
+    <h3>Por que escolher a ErreJota?</h3>
+    <ul>
+      <li>🚚 Técnicos com equipamento próprio</li>
+      <li>⚡ Serviço na hora, sem enrolação</li>
+      <li>📍 Atendimento em toda a Zona Norte, Sul e Oeste</li>
+    </ul>
+    <p><strong>Fale direto com um técnico no WhatsApp agora:</strong></p>
+    <a href="https://wa.me/5521994194220" class="btn-whatsapp" id="btn-whatsapp-final" onclick="trackWhatsAppClick()">FALAR COM TÉCNICO</a>
+  </section>
+
+  <a href="https://wa.me/5521994194220" class="fixed-btn" onclick="trackWhatsAppClick()">💬</a>
+</body>
+</html>
